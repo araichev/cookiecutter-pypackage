@@ -1,27 +1,22 @@
-import setuptools
+from setuptools import setup, find_packages
+
+
+with open('README.rst') as f:
+    readme = f.read()
+
+with open('LICENSE.txt') as f:
+    license = f.read()
 
 setuptools.setup(
     name="{{ cookiecutter.package_name }}",
     version="{{ cookiecutter.package_version }}",
     url="{{ cookiecutter.package_url }}",
-
     author="{{ cookiecutter.author_name }}",
     author_email="{{ cookiecutter.author_email }}",
-
     description="{{ cookiecutter.package_description }}",
-    long_description=open('README.rst').read(),
-
-    packages=setuptools.find_packages(),
-
+    long_description=readme,
+    data_files = [('', ['LICENSE.txt'])],
+    license=license,
+    packages=find_packages(exclude=('tests', 'docs')),   
     install_requires=[],
-
-    classifiers=[
-        'Development Status :: 2 - Pre-Alpha',
-        'Programming Language :: Python',
-        'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.7',
-        'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.4',
-        'Programming Language :: Python :: 3.5',
-    ],
 )
