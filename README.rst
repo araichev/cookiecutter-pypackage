@@ -5,6 +5,7 @@ A minimal `cookiecutter <https://github.com/audreyr/cookiecutter>`_ template for
 
 Usage
 =====
+.. code::
 
     pip install cookiecutter
     git clone https://github.com/araichev/cookiecutter-pypackage.git
