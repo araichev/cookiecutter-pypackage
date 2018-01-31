@@ -17,9 +17,9 @@ Authors
 - {{ cookiecutter.author_name }}, {{ cookiecutter.date }}
 
 
-History
+Changes
 ========
 
 {{ cookiecutter.package_version }}, <date>
-------------------------------
+-------------------------------------------
 - Initial release
