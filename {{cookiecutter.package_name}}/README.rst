@@ -21,5 +21,5 @@ Changes
 ========
 
 {{ cookiecutter.package_version }}, <date>
--------------------------------------------
+-------------------------
 - Initial release
